@@ -1,0 +1,34 @@
+Navbar:
+  li:width(25%), inline-block
+  ul:whitespace - nowrap
+
+Position:
+  postion fixed: add z-index
+
+Sticky nav:
+  position:sticky
+  top:100px
+
+
+
+overflow-hidden : crop extra content
+
+###box-sizing:border-box###
+
+Pseudo classes and elements:
+  :hover
+  :focus
+  :valid
+  ::first-line
+  ::first-letter
+  ::selection //mouse drag select
+  ::after{
+    content:'..' //adds content
+  } 
+
+##Media Query##
+@media screen and (max-width:700px){}
+
+##FLEX##
+justify content-horizontal axis
+align-items-vertical axis
