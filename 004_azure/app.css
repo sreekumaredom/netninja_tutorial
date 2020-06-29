@@ -358,7 +358,7 @@ header .header-left ul li:nth-child(2) a:hover {
   height: 32px;
 }
 .lt-container .lt-container-item .icon-small img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /* Cloud section */
