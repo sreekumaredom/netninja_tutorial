@@ -21,9 +21,10 @@ HTML &amp; CSS Tutorials + Notes
   * Sticky: positioned based on scroll position eg. top:0 => fixed(till then relative)
 
 ### CSS Flexbox
+  *  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   * .container { display: flex | inline-flex }
   * .container { flex-direction: row | row-reverse | column | column-reverse }
-  * .container { flex-wrap: nowrap | wrap | wrap-reverse }
+  * .container { flex-wrap: nowrap | wrap | wrap-reverse } (jump to next line or not)
   * .container { flex-flow: column wrap } (shorthand)
   * .container { justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right }
   * .container { align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end}
