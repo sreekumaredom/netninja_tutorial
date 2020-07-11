@@ -8,7 +8,7 @@ HTML &amp; CSS Tutorials + Notes
 
 ### Media Queries
   * Break-points: under 500px(smartphones), 501-768px(tablets), 769-1200(normal),1201+(wide screen)
-  * <link rel="stylesheet" media="screen and (max-width:768px) href="mobile.css"> - Follow priority while placing the link tag
+  * "<link rel="stylesheet" media="screen and (max-width:768px) href="mobile.css">" follow priority while placing the link tag
 
 ### Background
   * background: url(...) no-repeat center center /cover
