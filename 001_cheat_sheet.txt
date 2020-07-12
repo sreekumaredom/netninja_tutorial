@@ -1,3 +1,14 @@
+//CSS Positioning
+  Static:not effected by t-b-l-r properties
+  Relative:tblr values moves element from its normal position
+  Absolute: positioned relative to its parent element that is positioned relative
+  Fixed:positioned relative to the viewport
+  Sticky:positioned based on scroll position
+
+
+
+
+
 //CSS Grid//
   grid-template-columns: repeat(3, 1fr);    //column no and size
   grid-template-rows: repeat(3, 1fr);       //row no and size
