@@ -26,8 +26,16 @@ HTML &amp; CSS Tutorials + Notes
   * .container { flex-direction: row | row-reverse | column | column-reverse }
   * .container { flex-wrap: nowrap | wrap | wrap-reverse } (jump to next line or not)
   * .container { flex-flow: column wrap } (shorthand)
-  * .container { justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right }
-  * .container { align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end}
+  * .container { justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right } (main axis)
+  * .container { align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end} (cross-axis)
+  * .container {
+  align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline }
+  
+  * .items { flex: 1 0 200px } (grow shrink basis)
+  * .item { align-self: auto | flex-start | flex-end | center | baseline | stretch }
+  * .item { order: 5 } (default is 0)
+  * .item { flex-grow: 4} (default:0, spread evenly,take up space)
+  
 
   
 ### CSS Transform
