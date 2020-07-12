@@ -1,6 +1,18 @@
 # netninja_tutorial
 HTML &amp; CSS Tutorials + Notes
 
+### Overlay
+   * .hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+
 ### Display
   * Inline: margin and padding will only push other elements horizontally away, not vertically. will not accept height and width.
   * Inline-block: similar, width and height will be respected.
