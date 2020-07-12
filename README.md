@@ -10,6 +10,9 @@ HTML &amp; CSS Tutorials + Notes
   bottom: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.6);
+  } 
+  * .hero *{
+  z-index: 10;
 }
 
 
