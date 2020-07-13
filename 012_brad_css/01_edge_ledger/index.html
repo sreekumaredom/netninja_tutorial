@@ -3,20 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Flex Basics</title>
+
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/70db74410b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Welcome To EdgeLedger</title>
   </head>
-  <body>
-    <div class="flex-container">
-      <div class="item item-1">
-        <h3>Item 1</h3>
+  <body id="home">
+    <header class="hero">
+      <div class="navbar" id="navbar">
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-book-open"></i>EdgeLedger</span
+          >
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cases">Cases</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="item item-2">
-        <h3>Item 2</h3>
+      <div class="content">
+        <h1>The Sky Is The Limit</h1>
+        <p>We provide world class financial assistance</p>
+        <a href="#about" class="btn"
+          ><i class="fas fa-chevron-right"></i> Read More</a
+        >
       </div>
-      <div class="item item-3">
-        <h3>Item 3</h3>
-      </div>
-    </div>
+    </header>
+    <main>
+      <!-- About: Icons -->
+      <section id="about" class="icons bg-light">
+        <div class="flex-items">
+          <div>
+            <i class="fas fa-university fa-2x"></i>
+            <div>
+              <h3>Investment Banking</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A,
+                unde.
+              </p>
+            </div>
+          </div>
+          <div>
+            <i class="fas fa-book-reader fa-2x"></i>
+            <div>
+              <h3>Portfolio Manager</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A,
+                unde.
+              </p>
+            </div>
+          </div>
+          <div>
+            <i class="fas fa-pencil-alt fa-2x"></i>
+            <div>
+              <h3>Tax & Custodial</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A,
+                unde.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
