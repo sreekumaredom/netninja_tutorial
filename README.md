@@ -15,6 +15,8 @@ HTML &amp; CSS Tutorials + Notes
   z-index: 10;
 }
 
+### Note
+  * object-fit: cover 
 
 ### Display
   * Inline: margin and padding will only push other elements horizontally away, not vertically. will not accept height and width.
