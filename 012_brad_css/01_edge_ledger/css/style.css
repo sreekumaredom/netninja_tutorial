@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
 
 * {
   box-sizing: border-box;
@@ -36,39 +36,6 @@ img {
   width: 100%;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #333;
-  color: #fff;
-  opacity: 0.8;
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  padding: 0 30px;
-}
-
-.navbar a {
-  color: #fff;
-  padding: 10px 20px;
-  margin: 0 5px;
-}
-
-.navbar a:hover {
-  border-bottom: #28a745 2px solid;
-}
-
-.navbar ul {
-  display: flex;
-}
-
-.navbar .logo {
-  font-weight: 400;
-}
-
 /* Header */
 .hero {
   background: url('../img/home/showcase.jpg') no-repeat center center/cover;
@@ -94,7 +61,7 @@ img {
 .hero .content p {
   font-size: 23px;
   max-width: 600px;
-  margin: 20px 0 30px;
+  margin: 20px 0px 30px;
 }
 
 .hero::before {
@@ -102,8 +69,8 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
 
@@ -129,6 +96,62 @@ img {
   margin-bottom: 15px;
 }
 
-.flex-items > div {
-  padding: 20px;
+.cases img:hover {
+  opacity: 0.7;
+}
+
+.team img {
+  border-radius: 50%;
+}
+
+/* Call back form */
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f4f4f4 1px solid;
+}
+
+.callback-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+.callback-form input:focus {
+  outline-color: #28a745;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #28a745;
+}
+
+.footer .social > * {
+  margin-right: 30px;
 }
