@@ -1,0 +1,76 @@
+//CSS Positioning
+  Static:not effected by t-b-l-r properties
+  Relative:tblr values moves element from its normal position
+  Absolute: positioned relative to its parent element that is positioned relative
+  Fixed:positioned relative to the viewport
+  Sticky:positioned based on scroll position
+
+
+
+
+
+//CSS Grid//
+  grid-template-columns: repeat(3, 1fr);    //column no and size
+  grid-template-rows: repeat(3, 1fr);       //row no and size
+
+  grid-auto-rows:minmax(200px,auto)         //row height
+
+  align-items: start;                       //no row height, only element height
+  align-items: end;                          
+  align-items: stretch;
+
+
+  justify-items: start;                     //no column width, only element width
+  justify-items: end;                        
+  justify-items: stretch;
+
+  grid-gap:20px                             //item gap
+
+  grid-template-areas:                      //position items
+    'header header header header'
+
+
+
+//CSS Grid Item//
+  grid-column:1/3                           //spanning
+  grid-row:1/3                              //spanning
+  grid-column: span 3;
+
+  justify-self:start
+  align-self:end
+
+
+
+//CSS Transform//
+  transform: translate(200px, 200px);
+  transform: scale(2);
+  transform: rotateX(100deg);
+
+
+
+//CSS Transition//
+  transition:1s                                           //all 
+  transition: background 1s, transform 0.3s 1s  ease-in;  //1s delay 2 property
+
+
+//CSS Animation//
+  animation: wind 80s linear 2s infinite reverse;
+ 
+  animation-fill-mode: both;forwards;....
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+    animation-timing-function: ease-in,....,cubicbezier;
+
+
+
+// KEYFRAMES //
+@keyframes drive {
+  from {
+    transform: translateX(0);
+  }                                   //  animation: drive 3s;
+  to {                                    animation-fill-mode: forwards;backwards;both;
+    transform: translateX(700px);         animation-delay:2s
+  }
+}
+
+  

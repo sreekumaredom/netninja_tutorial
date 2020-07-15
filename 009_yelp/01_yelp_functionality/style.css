@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  font-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #d32323;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0px auto;
+  padding: 1.875rem;
+}
+
+.align-center {
+  text-align: center;
+}
+
+ul.places {
+  margin: 0.625rem auto;
+  display: flex;
+  max-width: 82%;
+  font-size: 1.1rem;
+}
+
+ul.places li {
+  margin: 0px 0.625rem;
+  border-bottom: 3px solid white;
+}
+
+ul.places li a {
+  display: inline-block;
+  color: #666;
+}
+
+ul.places li a:hover {
+  color: #d32323;
+}
+
+/* hot business */
+.hot-business h4 {
+  margin-top: 2.5rem;
+}
+
+.hot-business-cards {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.reviews {
+  display: flex;
+}
+
+ul.hot-business-card-details-list li {
+  margin-top: 0.5rem;
+}
+
+.reviews div {
+  margin-left: 0.3rem;
+  padding: 0.1rem;
+  border-radius: 3px;
+}
+
+.hot-business-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  margin: 0.4rem;
+  cursor: pointer;
+  transition: all 2s ease-in;
+}

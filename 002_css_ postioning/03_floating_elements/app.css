@@ -1,0 +1,39 @@
+body {
+  background: #eeeeee;
+}
+
+.wrapper {
+  background: #fff;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* img {
+  float: right;
+  margin: 10px;
+} */
+
+.box {
+  height: 100px;
+  width: 100px;
+}
+
+.blue {
+  background: blue;
+  float: right;
+}
+.red {
+  background: red;
+  float: right;
+}
+.green {
+  background: green;
+  float: right;
+}
