@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+:root {
+  --text-primary-color: #333;
+  --text-secondary-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.content-align {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  background: #000;
+  color: var(--text-secondary-color);
+}
+
+header .content-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+header .content-align > * {
+  margin: 15px 0;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+header nav > * {
+  display: flex;
+}
+
+header nav .nav-right li,
+header nav .nav-left li {
+  padding: 5px 10px;
+}
+
+header nav .nav-right li a,
+header nav .nav-left li a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+header nav .nav-right li:last-child {
+  border: 1px solid #fff;
+  border-radius: 1px;
+}
+
+header nav .nav-right li:last-child {
+  transition: background 0.3s ease-in;
+}
+
+header nav .nav-right li:last-child:hover a {
+  color: #000;
+}
+header nav .nav-right li:last-child:hover {
+  background: #fff;
+}
+
+header nav .nav-right li:first-child,
+header nav .nav-left li {
+  border-bottom: 2px solid transparent;
+}
+
+header nav .nav-right li:first-child:hover,
+header nav .nav-left li:hover {
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+
+header .main-logo {
+  text-align: center;
+}
+
+header .main-logo img {
+  height: 150px;
+}
+
+header .search input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+}
+
+header .search ul {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+header .search ul li {
+  margin: 0 10px;
+}
+
+header .search ul a {
+  color: var(--text-secondary-color);
+  font-weight: 700;
+}
+header .search ul li:hover a {
+  border-bottom: 2px solid #fff;
+}
+
+header .header-writing {
+  text-align: center;
+}
+
+.header-writing .header-writing-container a {
+  color: var(--text-secondary-color);
+  font-weight: 600;
+  border-bottom: 2px solid #fff;
+}
+
+.header-writing-container {
+  text-align: center;
+  max-width: 502px;
+  margin: 10px auto 60px auto;
+}
+
+/* Best business section */
+.best-business {
+  background: #f5f6f5;
+  padding: 15px 0px;
+}
+
+.best-business .content-align {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.best-business h2 {
+  color: #d32323;
+  font-weight: 700;
+  line-height: 1.28571em;
+  margin: 20px 0;
+}
+
+.business-flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.business {
+  margin: 0 10px;
+  background: #fff;
+  border: 2px solid #e6e6e6;
+  width: 200px;
+}
+
+.business:hover,
+.business:hover h2 {
+  cursor: pointer;
+  color: #0073bb;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.business-img img {
+  width: 100%;
+  height: 172px;
+  object-fit: cover;
+}
+
+.business h3 {
+  padding: 7px 0;
+}
+
+/* Yelp place */
+.yelp-place h2,
+.yelp-place h4 {
+  color: #d32323;
+  font-weight: 700;
+  line-height: 1.28571em;
+  margin: 20px 0;
+}
+
+.yelp-place {
+  background: #f5f6f5;
+  padding: 15px 0px;
+}
+
+.yelp-place .content-align {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.yelp-place ul {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(182, 181, 181);
+}
+
+.yelp-place ul li {
+  padding: 10px;
+  height: 100%;
+}
+
+.yelp-place ul li a {
+  color: #333;
+  font-weight: 400;
+  /* height: 100%;
+  width: 100%;
+  display: inline-block; */
+}
+
+.yelp-place ul li {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
+.yelp-place ul li:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #d32323;
+}
+
+/* Hot businesses flex */
+.hot-business-flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.hot-business {
+  background: #fff;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  flex-grow: 1;
+  margin-left: 30px;
+}
+
+.hot-business-content {
+  padding: 12px;
+  position: relative;
+  text-align: left;
+}
+
+.hot-business-content h3 {
+  color: #0073bb;
+}
+
+.hot-business-content .rating i {
+  color: #fff;
+  border-radius: 4px;
+  background-color: #d32323;
+  padding: 3px;
+}
+
+.hot-business-img {
+  height: 180px;
+  overflow: hidden;
+  border-bottom: 1px solid #e6e6e6;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.hot-business-img-1 {
+  height: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./img/ht_business/2.jpg');
+}
+.hot-business-img-2 {
+  height: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./img/ht_business/1.jpg');
+}
+.hot-business-img-3 {
+  height: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./img/ht_business/3.jpg');
+}
+
+.opened {
+  color: #f15c00;
+}
+
+.yelp-place h5 {
+  text-align: center;
+  color: #0073bb;
+  font-weight: 400;
+}
+
+.yelp-place h5:hover {
+  text-decoration: underline;
+}
+
+/* Local yelp & official yelp section */
+.local-img {
+  height: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./img/local_off/1.png');
+}
+
+.official-img {
+  height: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./img/local_off/2.png');
+}
+
+.local-offical h4 {
+  text-align: center;
+  color: #d32323;
+}
+
+.local-offical h5 {
+  color: #999;
+}
+
+.local-official-flex .hot-business-content h4 {
+  color: #0073bb;
+  text-align: left;
+}
+
+.local-official-flex {
+  display: flex;
+}
+
+.official > h5,
+.local > h5 {
+  text-align: center;
+  color: #0073bb;
+}
