@@ -21,14 +21,12 @@ HTML &amp; CSS Tutorials + Notes
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  padding: 20px 0;
   cursor: pointer;
 }
 
-* .sp-item {
+* .item {
   flex: 0 0 auto;
-  margin-right: 10px;
-}
+ }
 
 
 ### Note
