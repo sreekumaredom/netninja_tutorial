@@ -24,6 +24,7 @@ body {
   background: #fff;
   color: #333;
   line-height: 1.6;
+  /* overflow-x: hidden; */
 }
 
 .content-align {
@@ -107,10 +108,60 @@ header .main-logo img {
   height: 150px;
 }
 
-header .search input {
-  width: 100%;
-  height: 40px;
+.search-box {
+  display: flex;
+  background: #fff;
+  border: 2px solid #000;
+  /* width: 700px; */
+  margin: 10px auto;
   border-radius: 4px;
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+}
+
+.search-box label {
+  font-weight: 700;
+}
+
+.search-field {
+  display: flex;
+  padding: 10px 0;
+  flex: 1;
+}
+
+.search-left,
+.search-right {
+  flex: 1;
+}
+
+.search-left {
+  border-right: 1px solid #666;
+  margin-right: 10px;
+  margin-left: 20px;
+  padding-right: 23px;
+}
+
+input {
+  line-height: 2.5;
+  font-weight: 400;
+  width: 80%;
+  display: inline-block;
+  border: none;
+  padding: 1px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.search-btn {
+  color: #fff;
+  background: #d32323;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 header .search ul {
