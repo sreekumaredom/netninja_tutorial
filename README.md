@@ -16,6 +16,21 @@ HTML &amp; CSS Tutorials + Notes
   z-index: 10;
 }
 
+### Horizontal card scroll
+  * .container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+* .sp-item {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+
 ### Note
   * object-fit: cover 
 
