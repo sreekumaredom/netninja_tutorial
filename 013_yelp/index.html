@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/70db74410b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Yelp</title>
+  </head>
+  <body>
+    <div class="desktop-view">
+      <!-- Header -->
+    <header>
+      <div class="content-align">
+        <nav>
+          <ul class="nav-left">
+            <li><a href="">Write a Review</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Talk</a></li>
+          </ul>
+          <ul class="nav-right">
+            <li><a href="">Log In</a></li>
+            <li><a href="">Sign Up</a></li>
+          </ul>
+        </nav>
+        <div class="main-logo">
+          <a href="#"><img src="img/logo1.png" alt="" /></a>
+        </div>
+        <div class="search">
+          <div class="search-box">
+            <div class="search-field">
+              <div class="search-left">
+                <label for="find">Find</label>
+                <input
+                  type="text"
+                  id="find"
+                  placeholder="burgers, barbers, spas, handymen"
+                />
+              </div>
+              <div class="search-right">
+                <label for="near">Near</label>
+                <input type="text" id="near" placeholder="San Francisco, CA" />
+              </div>
+            </div>
+            <div class="search-btn"><i class="fas fa-search"></i></div>
+          </div>          
+          <ul>
+            <li>
+              <a href=""><i class="fas fa-wrench"></i> Plumbers</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-utensils"></i> Restaurants</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-home"></i> Home Services</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-truck"></i> Delivery</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-writing">
+          <div class="header-writing-container">
+            <h5>Yelp is committed to supporting the Black community</h5>
+            <p style="margin-top: 5px;margin-bottom: 20px;">
+              As part of our ongoing efforts, the Yelp Foundation is donating
+              $500,000 to the Equal Justice Initiative and the NAACP Legal
+              Defense Fund. We are also developing tools in support of
+              Black-owned businesses.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Best Business Section -->
+      <section class="best-business">
+        <div class="content-align">
+          <h2>Find the Best Businesses in Town</h2>
+          <div class="business-flex">
+            <div class="business">
+              <div class="business-img">
+                <img src="img/business/1.jpg" alt="" />
+              </div>
+              <h3>Hotels</h3>
+            </div>
+            <div class="business">
+              <div class="business-img">
+                <img src="img/business/2.jpg" alt="" />
+              </div>
+              <h3>Movers</h3>
+            </div>
+            <div class="business">
+              <div class="business-img">
+                <img src="img/business/3.jpg" alt="" />
+              </div>
+              <h3>Locksmith</h3>
+            </div>
+            <div class="business">
+              <div class="business-img">
+                <img src="img/business/4.jpg" alt="" />
+              </div>
+              <h3>Gyms</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Yelp Place -->
+      <section class="yelp-place">
+        <div class="content-align">
+          <h2>Yelp San Francisco</h2>
+          <ul>
+            <li><a href="">New York</a></li>
+            <li><a href="">San Jose</a></li>
+            <li><a href="">Los Angeles</a></li>
+            <li><a href="">Chicago</a></li>
+            <li><a href="">Palo Alto</a></li>
+            <li><a href="">Oakland</a></li>
+            <li>
+              <a href=""><i class="fas fa-search"></i> More Cities</a>
+            </li>
+          </ul>
+          <h4>Hot & New Businesses</h4>
+          <!-- hot business flex -->
+          <div class="hot-business-flex">
+            <!-- card 1 -->
+            <div class="hot-business">
+              <div class="hot-business-img">
+                <div class="hot-business-img-1"></div>
+              </div>
+              <div class="hot-business-content">
+                <h3>Awesum Dimsum</h3>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>9 Reviews</span>
+                </div>
+                <div class="category">Dim Sum, Cantonese</div>
+                <div class="neightbourhood">Gramercy</div>
+                <div class="opened">
+                  <i class="fas fa-fire-alt"></i> Opened 4 weeks ago
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="hot-business">
+              <div class="hot-business-img">
+                <div class="hot-business-img-2"></div>
+              </div>
+              <div class="hot-business-content">
+                <h3>Surreal Creamery</h3>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>57 Reviews</span>
+                </div>
+                <div class="category">
+                  Ice Cream & Frozen Yogurt
+                </div>
+                <div class="neightbourhood">Kips Bay</div>
+                <div class="opened">
+                  <i class="fas fa-fire-alt"></i> Opened 6 weeks ago
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="hot-business">
+              <div class="hot-business-img">
+                <div class="hot-business-img-3"></div>
+              </div>
+              <div class="hot-business-content">
+                <h3>Dreamers’ Kitchen</h3>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>20 Reviews</span>
+                </div>
+                <div class="category">American (Traditional)</div>
+                <div class="neightbourhood">Inner Richmond</div>
+                <div class="opened">
+                  <i class="fas fa-fire-alt"></i> Opened 5 weeks ago
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5>See more hot and new businesses</h5>
+        </div>
+      </section>
+
+      <!-- Local and Official Yelp -->
+      <section class="local-official">
+        <div class="content-align">
+          <div class="local-official-flex">
+            <div class="local">
+              <h4>The Local Yelp</h4>
+              <!-- The local yelp card -->
+              <div class="hot-business">
+                <div class="hot-business-img">
+                  <div class="local-img"></div>
+                </div>
+                <div class="hot-business-content">
+                  <h4>Does your pup need a haircut, too? 🐶</h4>
+                  <div>
+                    The dog needs a haircut, too. And maybe a nice long hike?
+                    Definitely. Throw in a brand new toy while you’re at it and
+                    make this the week your loyal companion gets all the love.
+                    From mobile...
+                  </div>
+                  <br />
+                  <h5>The Local Yelp</h5>
+                </div>
+              </div>
+              <h5>See more</h5>
+            </div>
+            <div class="official">
+              <h4>Official Yelp Event</h4>
+              <!-- The offical event card -->
+              <div class="hot-business">
+                <div class="hot-business-img">
+                  <div class="official-img"></div>
+                </div>
+                <div class="hot-business-content">
+                  <h4>Yelp's Sweet 16 Presents: Brown...</h4>
+                  <div>
+                    It's Yelp's 16th Birthday this month! In honor of Yelp's
+                    Sweet 16, we're hosting 16 swee...
+                  </div>
+                  <br />
+                  <h5>Thu, Jul 30, 5:00 pm - 6:00 pm</h5>
+                </div>
+              </div>
+              <h5>See all events</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Review & recent collections -->
+      <section class="rod-recent">
+        <div class="content-align">
+          <div class="rod-recent-flex">
+            <div class="rod-parent">
+              <h2>Review of the Day</h2>
+              <div class="rod">
+                <div class="rate-profile">
+                  <img src="./img/rod/1.jpg" alt="" />
+                  <ul>
+                    <li style="color: #0073bb;">Lori L.</li>
+                    <li>
+                      <i class="fas fa-user-friends"></i> 2240&nbsp;&nbsp;
+                      <i class="fas fa-star"></i> 617
+                    </li>
+                    <li>
+                      Wrote a review for
+                      <span style="color: #0073bb;">Boilery</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="banner">
+                  <span>Review of the Day</span>
+                  <img src="./img/rod/2.png" alt="" />
+                </div>
+                <div class="user-rating">
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>12/22/2019</span>
+                  </div>
+                </div>
+                <div class="user-matter">
+                  I was able to stop by The Boilery with a couple friends on a
+                  chilly winter night, and despite the longer-than-normal trek
+                  for me, was looking forward to trying their extensive seafood
+                  menu. As the name of the restaurant suggests, their focus is
+                  on seafood boils, but with several other preparations and
+                  non-seafood options for those who aren't as keen on it. The
+                  space is located right off of the 96th St 1/2/3 and has a...
+                  <span style="color: #0073bb;">Continue reading</span>
+                </div>
+              </div>
+              <h5>Read previous reviews</h5>
+            </div>
+            <div class="recent-collection">
+              <h2>Recent</h2>
+              <div class="recent-collection-container">
+                <div class="recent-collection-item">
+                  <img src="./img/recent-collection/1.jpg" alt="" />
+                  <ul>
+                    <li style="color: #0073bb; font-weight: 700;">
+                      <span>NYC</span>
+                    </li>
+                    <li><br /><br /></li>
+                    <li style="color: #999;">
+                      90 Places - By <span style="color: #0073bb;">Kelly</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="recent-collection-item">
+                  <img src="./img/recent-collection/2.jpg" alt="" />
+                  <ul>
+                    <li style="color: #0073bb; font-weight: 700;">
+                      Tacos in Brookly
+                    </li>
+                    <li>
+                      They’re fun, they’re crazy delicious.
+                    </li>
+                    <li style="color: #999;">
+                      10 Places - By
+                      <span style="color: #0073bb;">Moriene</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="recent-collection-item">
+                  <img src="./img/recent-collection/3.jpg" alt="" />
+                  <ul>
+                    <li style="color: #0073bb; font-weight: 700;">
+                      New York
+                    </li>
+                    <li><br /><br /></li>
+                    <li style="color: #999;">
+                      10 Places - By
+                      <span style="color: #0073bb;">Bay B.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h5>Browse more collections</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recent-activity">
+        <div class="content-align">
+          <h2>Recent Activity</h2>
+          <div class="recent-activity-container">
+            <div class="recent-activity-card">
+              <div class="card-user">
+                <img src="img/recent-activity/user/1.jpg" alt="" />
+                <ul>
+                  <li style="color: #0073bb; font-weight: 700;">Jando S.</li>
+                  <li>Added 2 photos</li>
+                </ul>
+              </div>
+              <div class="photo-section">
+                <span style="color: #0073bb; font-weight: 700;"
+                  >Sunnyside Pizza</span
+                >
+                <div class="two-pizzas">
+                  <div class="pizza-box">
+                    <img src="./img/recent-activity/food/1.jpg" alt="" />
+                    <div class="like">
+                      <i class="far fa-thumbs-up"></i> Like
+                    </div>
+                  </div>
+                  <div style="margin-left: 5px;" class="pizza-box">
+                    <img src="./img/recent-activity/food/1.jpg" alt="" />
+                    <div class="like">
+                      <i class="far fa-thumbs-up"></i> Like
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recent-activity-card">
+              <div class="card-user">
+                <img src="img/recent-activity/user/2.jpg" alt="" />
+                <ul>
+                  <li style="color: #0073bb; font-weight: 700;">Monique S.</li>
+                  <li>Wrote a review</li>
+                </ul>
+              </div>
+              <div class="shake-img">
+                <img src="./img/recent-activity/food/3.jpg" alt="" />
+                <span style="color: #0073bb; font-weight: 700;"
+                  >Chocolate Michel Cluizel</span
+                >
+              </div>
+              <div class="shake-review">
+                <ul class="shake-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </ul>
+                Great customer service! Sales associate only allowing 1 customer
+                in at a time. Masks are required to be served. I grabbed tea
+                with a few chocolate bars since they are having a buy one get
+                one free pro
+                <span style="color: #0073bb;">Continue reading</span>
+              </div>
+              <div class="rate-icons">
+                <i class="far fa-lightbulb"></i>
+                <i class="far fa-grin-beam"></i>
+                <i class="far fa-smile"></i>
+              </div>
+            </div>
+            <div class="recent-activity-card">
+              <div class="card-user">
+                <img src="img/recent-activity/user/3.jpg" alt="" />
+                <ul>
+                  <li style="color: #0073bb; font-weight: 700;">Tom G.</li>
+                  <li>Added 1 photo</li>
+                </ul>
+              </div>
+              <span style="color: #0073bb; font-weight: 700;"
+                >Roosevelt Island Tramway</span
+              >
+              <img src="./img/recent-activity/food/2.jpg" alt="" />
+              <div class="sub-like"><i class="far fa-thumbs-up"></i> Like</div>
+            </div>
+          </div>
+          <h5>
+            <i class="fas fa-chevron-down"></i> Show more activity in New York
+          </h5>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="content-align">
+          <h2>Browse Business by Category</h2>
+          <div class="categories-flex">
+            <div class="flex-item">
+              <img src="./img/browse/1.png" alt="" />
+              <span>Restaurants</span>
+            </div>
+            <div class="flex-item">
+              <img src="./img/browse/2.png" alt="" />
+              <span>Shopping</span>
+            </div>
+            <div class="flex-item">
+              <img src="./img/browse/3.png" alt="" />
+              <span>Nightlife</span>
+            </div>
+            <div class="flex-item">
+              <img src="./img/browse/4.png" alt="" />
+              <span>Active Life</span>
+            </div>
+            <div class="flex-item">
+              <img src="./img/browse/5.png" alt="" />
+              <span>Beauty & Spas</span>
+            </div>
+            <div class="flex-item">
+              <img src="./img/browse/6.png" alt="" />
+              <span>Automotive</span>
+            </div>
+            <div class="flex-item">
+              <img src="./img/browse/7.png" alt="" />
+              <span>Home Services</span>
+            </div>
+            <div class="flex-item">
+              <img src="./img/browse/8.png" alt="" />
+              <span>More Categories</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mobile-apps">
+        <div class="content-align">
+          <h2>Yelp Mobile Apps</h2>
+         <div class="mobile-apps-flex">
+           <div class="mobile-apps-flex-item">
+             <h7>iPhone, iPad and <i class="fab fa-apple"></i> Watch</h7><br>
+             <img src="./img/mobile-apps/1.png" alt="">
+           </div>
+           <div class="mobile-apps-flex-item">
+             <h7>Android</h7><br>
+             <img src="./img/mobile-apps/2.png" alt="">
+           </div>
+         </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>About</li>
+        <li>About Yelp</li>
+        <li>Careers</li>
+        <li>Investor Relations</li>
+        <li>Content Guidelines</li>
+        <li>Terms of Service</li>
+        <li>Privacy Policy</li>
+        <li>Ad Choices</li>
+      </ul>
+      <ul>
+        <li>Discover</li>
+        <li>Yelp Project Cost Guides</li>
+        <li>Collections</li>
+        <li>Talk</li>
+        <li>Events</li>
+        <li>The Local Yelp</li>
+        <li>Yelp Blog</li>
+        <li>Support</li>
+        <li>Yelp Mobile</li>
+        <li>Developers</li>
+        <li>RSS</li>
+      </ul>
+      <ul>
+        <li>Yelp for Business</li>
+        <li>Claim your Business Page</li>
+        <li>Advertise on Yelp</li>
+        <li>Yelp for Restaurant Owners</li>
+        <li>Table Management</li>
+        <li>Business Success Stories</li>
+        <li>Business Support</li>
+        <li>Yelp Blog for Business</li>
+      </ul>
+      <ul>
+        <li>Languages</li>
+        <li>English</li>
+        <li>Countries</li>
+        <li>United States</li>
+      </ul>
+    </footer>
+    <div class="footer-image">
+      <img src="./img/footer.png" alt=""><br>
+      <span>Copyright © 2004–2020 Yelp Inc. Yelp, <img src="./img/yelp.png" alt="">, <img src="./img/yelp1.png" alt=""> and related marks are registered trademarks of Yelp.</span>
+    </div>
+    </div>
+    <div class="mobile-view">
+       <div class="m-header">
+         <div class="m-nav">
+           <div class="open-app-container">
+            <i class="fas fa-mobile-alt"></i>&nbsp; Open App
+           </div>
+           <div class="yelp-logo-container">
+             <img src="./img/myelp.png" alt="" >
+           </div>
+           <div class="search-ham">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bars"></i>
+           </div>
+         </div>
+         <div class="m-categories-flex">
+          <div class="m-flex-item">
+            <img src="./img/m-header-icons/1.png" alt="" />
+            <span>Restaurants</span>
+          </div>
+          <div class="m-flex-item">
+            <img src="./img/m-header-icons/2.png" alt="" />
+            <span>Delivery</span>
+          </div>
+          <div class="m-flex-item">
+            <img src="./img/m-header-icons/3.png" alt="" />
+            <span>Takeout</span>
+          </div>
+          <div class="m-flex-item">
+            <img src="./img/m-header-icons/4.png" alt="" />
+            <span>Accountants</span>
+          </div>
+          <div class="m-flex-item">
+            <img src="./img/m-header-icons/5.png" alt="" />
+            <span>Plumbers</span>
+          </div>
+          <div class="m-flex-item">
+            <img src="./img/m-header-icons/6.png" alt="" />
+            <span>Auto Repair</span>
+          </div>
+          <div class="m-flex-item">
+            <img src="./img/m-header-icons/7.png" alt="" />
+            <span>Movers</span>
+          </div>
+          <div class="m-flex-item">
+            <h1 style="font-size: 30px;">...</h1>
+            <span>More</span>
+          </div>
+        </div>
+       </div>
+       <div class="m-sp">
+         <h3>Services & Professionals</h3>
+         <div class="sp-container">
+           <div class="sp-item">
+             <img src="./img/sp/1.png" alt="">
+             <span>Automotive</span>
+           </div>
+           <div class="sp-item">
+            <img src="./img/sp/2.png" alt="">
+            <span>Apartments</span>
+          </div>
+           <div class="sp-item">
+            <img src="./img/sp/3.png" alt="">
+            <span>Sewing & Alterations</span>
+          </div>
+           <div class="sp-item">
+            <img src="./img/sp/4.png" alt="">
+            <span>Plumbing</span>
+          </div>
+           <div class="sp-item">
+            <img src="./img/sp/5.png" alt="">
+            <span>Keys & Locksmiths</span>
+          </div>
+           <div class="sp-item">
+            <img src="./img/sp/6.png" alt="">
+            <span>Mobile Phone Repair</span>
+          </div>
+           <div class="sp-item">
+            <img src="./img/sp/7.png" alt="">
+            <span>Laundromat</span>
+          </div>
+           <div class="sp-item">
+            <img src="./img/sp/8.png" alt="">
+            <span>Movers</span>
+          </div>
+           <div class="sp-item">
+            <img src="./img/sp/9.png" alt="">
+            <span>Automotive</span>
+          </div>
+           <div class="sp-item">
+            <img src="./img/sp/10.png" alt="">
+            <span>Appliances & Repair</span>
+          </div>
+         </div>
+       </div>
+       <div class="open-btn">
+        Open in the Yelp App
+      </div>
+      <h2 style="margin-left: 10px;">Hot New Business Nearby</h2>
+      <div class="hot-new-business-m">
+        <div class="business-m">
+          <img src="./img/m-hot-business/1.jpg" alt="">
+          <ul>
+            <li><h4>Mr.Green Blue</h4></li>
+            <li>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              6 Reviews
+            </li>
+            <li>Bubble Tea, Coffee & Tea, Juice Bars & Smoothies</li>
+          </ul>
+        </div>
+        <div class="business-m">
+          <img src="./img/m-hot-business/2.jpg" alt="">
+          <ul>
+            <li><h4>Mr.Green Blue</h4></li>
+            <li>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              19 Reviews
+            </li>
+            <li>Bubble Tea, Coffee & Tea, Juice Bars & Smoothies</li>
+          </ul>
+        </div>
+        <div class="business-m">
+          <img src="./img/m-hot-business/3.jpg" alt="">
+          <ul>
+            <li><h4>Mr.Green Blue</h4></li>
+            <li>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              21 Reviews
+            </li>
+            <li>Bubble Tea, Coffee & Tea, Juice Bars & Smoothies</li>
+          </ul>
+        </div>
+      </div>
+      <div class="m-view-more">
+        View More New Businesses
+      </div>
+      <div class="grey-line"></div>  
+       <div class="m-footer">
+         <div class="lg-country">
+              <ul>
+                <li>Languages</li>
+                <li>English <i class="fas fa-caret-down"></i></li>
+              </ul>
+              <ul>
+                <li>Countries</li>
+                <li>United States <i class="fas fa-caret-down"></i></li>
+              </ul>
+         </div>
+         <ul class="m-footer-nav-1">
+           <li>About</li>
+           <li>Blog</li>
+           <li>Support</li>
+           <li>Terms</li>
+           <li>Privacy Policy</li>
+         </ul>
+         <h4>Add a Business on Yelp</h4>
+         
+
+         <div class="copy">Copyright © 2004–2020 Yelp Inc. Yelp, <img src="./img/yelp.png" alt="">, <img src="./img/yelp1.png" alt=""> and related marks are registered trademarks of Yelp.</div>
+       </div>
+      
+     </div>
+        
+  </body>
+</html>
