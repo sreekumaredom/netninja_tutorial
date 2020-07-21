@@ -11,10 +11,109 @@
     <title>Amazon</title>
   </head>
   <body>
+    <!-- Modal background -->
+    <div class="modal-container" id="modal"></div>
+
+    <!-- Side nav -->
+    <div class="sidenav">
+      <div class="sidenav-logo">
+        <i class="fas fa-user-circle"></i> Hello, Sign in
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+      </div>
+      <div class="sidenav-heading">
+        Shop by Category
+      </div>
+      <ul>
+        <li>
+          <a href="#">Echo and Alexa</a><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Fire TV Stick</a><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Kindle E-Readers & eBooks</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Audible Audiobooks</a><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Amazon Prime Video</a><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Amazon Prime Music</a><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Mobiles, Computers</a><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">TV, Appliances, Electronics</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Men's Fashion</a><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Women's Fashion</a><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Home, Kitchen, Pets</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Beauty, Health, Grocery</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Sports,Fitness, Bags, Luggage</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Toys, Baby Products, Kid's Fashion</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Car, Motorbike, Industrial</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <li><a href="#">Books</a><i class="fas fa-chevron-right"></i></li>
+        <li>
+          <a href="#">Movies, Music & Video Games</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Gift Cards & Mobile Recharges</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Flight Tickets</a><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Full Store Directory</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+      </ul>
+      <div
+        style="border-top: 1px solid #767676; margin-top: 5px;"
+        class="sidenav-heading"
+      >
+        Help & Settings
+      </div>
+      <ul>
+        <li>
+          <a href="#">Your Account</a><i class="fas fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="#">Customer Service</a><i class="fas fa-chevron-right"></i>
+        </li>
+        <li><a href="#">Sign In</a><i class="fas fa-chevron-right"></i></li>
+      </ul>
+    </div>
+    <!-- Header -->
     <header class="nav">
       <div class="nav-belt">
         <div class="nav-left">
-          <div class="hamburger-container">
+          <div id="nav-toggle" class="hamburger-container">
             <i class="hamburger"></i>
           </div>
           <div class="nav-logo">
@@ -126,10 +225,10 @@
           <li>Gift Ideas</li>
           <li>Customer Service</li>
           <li>Sell</li>
+          <li>Baby</li>
+          <li>AmazonBasics</li>
+          <li>Coupons</li>
         </ul>
-        <div class="download-banner">
-          <img src="./download_app.jpg" alt="" />
-        </div>
       </div>
       <div class="nav-subnav">
         <ul>
@@ -139,6 +238,28 @@
         </ul>
       </div>
     </header>
+    <div class="ad-section">
+      <img src="./ad.jpg" alt="" />
+    </div>
+    <main>
+      <div class="breadcrums">
+        <ul>
+          <li>Computers & Accessories</li>
+          <li>></li>
+          <li>Accessories & Peripherals</li>
+          <li>></li>
+          <li>PC Gaming Peripherals</li>
+          <li>></li>
+          <li>Headsets</li>
+          <li>></li>
+          <li>
+            RUNMUS Stereo Gaming Headset for PS4, Xbox One, Nintendo Switch, PC,
+            PS3, MAC
+          </li>
+        </ul>
+      </div>
+      <div class="product-container"></div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
