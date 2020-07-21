@@ -110,8 +110,8 @@ body {
 }
 
 .nav-input {
-  margin-left: 30px;
-  width: 51%;
+  /* margin-left: 10px; */
+  width: 54%;
 }
 
 .nav-input-box input {
@@ -147,7 +147,7 @@ body {
   border: 1px solid transparent;
   cursor: pointer;
   border-radius: 2px;
-  padding: 0 10px 12px 5px;
+  padding: 0 20px 12px 5px;
 }
 
 .flag-container:hover {
@@ -443,4 +443,107 @@ main {
 
 .close-btn.active {
   display: inline;
+}
+
+.product-container {
+  display: flex;
+}
+
+.product-container a {
+  color: #0066c0;
+  text-decoration: none;
+}
+
+.product-container a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+.product-container h4 {
+  font-weight: 400;
+}
+
+.product-container > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.checked {
+  color: orange;
+}
+
+.rating-down {
+  font-size: 10px;
+}
+
+.rating-no {
+  margin-left: 30px;
+}
+
+.product-col-2-row-1 {
+  border-bottom: 1px solid #767676;
+}
+
+.product-col-2-row-2 {
+  border-bottom: 1px solid #767676;
+  padding: 15px 0;
+}
+
+.product-col-2-row-2 table td:first-child {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.delivery-by {
+  margin-top: 10px;
+}
+
+.emi-options {
+  margin-top: 3px;
+}
+
+.replacement-warranty {
+  margin-top: 7px;
+}
+
+.replacement-warranty img {
+  height: 35px;
+  width: 35px;
+  min-width: 35px;
+  min-height: 35px;
+  text-align: center;
+}
+
+.replacement-warranty > * {
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+}
+
+.warranty-container {
+  margin-left: 20px;
+}
+
+.product-col-2-row-3 h3 {
+  font-weight: 400;
+  color: #c45500;
+}
+
+.product-col-2-row-3 {
+  padding: 15px 0;
+  border-bottom: 1px solid #767676;
+}
+
+.product-col-2-row-3 h4 {
+  margin-top: 10px;
+}
+
+.product-col-2-row-4 {
+  padding: 15px 0;
+}
+
+.product-col-2-row-4 h5:last-child {
+  color: #004b91;
+  text-decoration: underline;
+  margin-top: 5px;
 }
