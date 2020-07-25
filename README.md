@@ -80,7 +80,39 @@ HTML &amp; CSS Tutorials + Notes
 - transform: scale(2);
 - transform: rotateX(100deg);
 
-### Pagination
+### CSS Grid
+  - grid-template-columns: repeat(3, 1fr);    //column no and size
+  - grid-template-rows: repeat(3, 1fr);       //row no and size
+
+  - grid-auto-rows:minmax(200px,auto)         //row height
+
+  - align-items: start;                       //no row height, only element height
+  - align-items: end;                          
+  - align-items: stretch;
+
+
+  - justify-items: start;                     //no column width, only element width
+  - justify-items: end;                        
+  - justify-items: stretch;
+
+  - grid-gap:20px                             //item gap
+
+  - grid-template-areas:                      //position items
+    'header header header header'
+
+
+
+### CSS Grid Item
+  - grid-column:1/3                           //spanning
+  - grid-row:1/3                              //spanning
+  - grid-column: span 3;
+
+  - justify-self:start
+  - align-self:end
+
+
+
+### Ribbon
 
 - <h1 class="ribbon">
      <strong class="ribbon-content">Everybody loves ribbons</strong>
