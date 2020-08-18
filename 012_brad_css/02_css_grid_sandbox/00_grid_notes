@@ -1,6 +1,6 @@
 //Grid notes
 
-* .container{
+.container{
     display:grid;
 
     grid-template-columns: 1fr 2fr 3fr;
@@ -9,14 +9,31 @@
     grid-template-rows: 1fr 2fr 3fr;
     grid-template-rows: repeat(3,1fr);
 
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); //galleries etc.
+
+
     grid-auto-rows: 3fr; //for un-specified rows
+
+   
+    grid-template-areas:
+          'header header header header'
+          'content content content sidebar'
+          'box-1 box-2 box-3 box-4'
+          'footer footer footer footer';
+       
+}
+
+.header{
+    grid-area: header;
+}
+
+
+.element{
 
     grid-column-start: 1; //col span longway         grid-column: 1/span 3; //col span shortcut    
     grid-column-end: 4;                               
 
-
     grid-row-start: 1; //row span longway            grid-row: 1/span 2; //row span shortcut
     grid-row-end: 3;
-
 
 }
