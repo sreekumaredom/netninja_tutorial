@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  margin: auto;
+  max-width: 1366px;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+#header {
+  background: url(./img/background2.jpg) center center/cover;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.main-nav .container {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.main-nav a {
+  color: #e5e5e5;
+}
+
+.main-nav h1 {
+  font-style: medium;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-nav ul li a {
+  /* padding: 0.75rem; */
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 4px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-nav ul li a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.msg-container {
+  color: #f7fff7;
+  max-width: 837px;
+}
+
+.msg-container p {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.header > .container {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.msg-container h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+
+.down {
+  text-align: center;
+}
+
+.down a {
+  color: #e5e5e5;
+}
+
+.down a:hover {
+  color: #fff;
+}
+
+/* Be our customer section */
+
+#be-customer {
+  height: 100vh;
+}
+
+#be-customer .container {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: repeat(2, auto);
+  padding-top: 90px;
+  grid-gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.be-customer-msg-1,
+.be-customer-msg-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #1b4332;
+}
+
+.be-customer-msg-1 h1,
+.be-customer-msg-2 h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.be-customer-msg-1 p,
+.be-customer-msg-2 p {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+/* Project listing section */
+#p-list {
+  height: 100vh;
+}
+
+/* About us section */
+#about {
+  height: 100vh;
+}
+
+#about .container {
+  padding-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 2rem;
+  color: #1b4332;
+  padding-left: 1rem;
+}
+
+.about-img {
+  height: 650px;
+  width: 473px;
+}
+
+.about-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-msg h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.about-msg p {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+/* Contact section */
+#contact {
+  height: 100vh;
+  background: #0d1613;
+  text-align: center;
+}
+
+#contact .container {
+  padding-top: 90px;
+  padding-left: 1rem;
+  color: #e5e5e5;
+}
+
+.contact-contents {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 2rem;
+}
+
+.contact-row-1 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 2rem;
+}
