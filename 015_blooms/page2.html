@@ -8,6 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./page2.css" />
+
     <title>Blooms</title>
   </head>
   <body>
@@ -61,16 +62,16 @@
         <div>
           <iframe
             width="100%"
-            height="320"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+            height="280"
+            src="https://www.youtube.com/embed/EmvuClxB5t4?autoplay=0"
           >
           </iframe>
         </div>
         <div>
           <iframe
             width="100%"
-            height="320"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+            height="280"
+            src="https://www.youtube.com/embed/zmDGsrw3vTk?autoplay=0"
           >
           </iframe>
         </div>
@@ -87,7 +88,132 @@
 
     <!-- Project listing section -->
     <section id="p-list" class="p-list">
-      <div class="container"></div>
+      <div class="container">
+        <div class="see-more"><a href="">See More</a></div>
+        <div class="cards-container">
+          <div class="mv-left" id="mv-left">
+            <i class="fas fa-caret-left fa-5x"></i>
+          </div>
+          <div class="mv-right" id="mv-right">
+            <i class="fas fa-caret-right fa-5x"></i>
+          </div>
+          <div class="card">
+            <img src="./img/page2/1.jpg" class="echo-img" alt="house" />
+            <div class="card-details">
+              <h1>Echo</h1>
+              <p class="card-location">Bangalore, Karnataka</p>
+              <p class="card-desc">Self Sufficient Community Living</p>
+              <div class="legal-process">
+                <label for="file" class="legal-lbl">Legal Process</label>
+                <progress id="file" value="90" class="progress" max="100">
+                  32%
+                </progress>
+                <span class="progress-value">90%</span>
+              </div>
+              <div class="ratings-bar">
+                <p>Plot Availability</p>
+                <div class="bars checked"></div>
+                <div class="bars checked"></div>
+                <div class="bars unchecked"></div>
+                <div class="bars unchecked"></div>
+                <div class="bars unchecked"></div>
+              </div>
+              <p class="cmn-mrgn">
+                Current Project Status : Customer Aquisition
+              </p>
+              <div class="card-btns">
+                <button class="project-btn">
+                  <a href=""
+                    >Project Details
+                    <span
+                      ><i class="fa fa-arrow-down" aria-hidden="true"></i></span
+                  ></a>
+                </button>
+                <button class="enquire-btn"><a href="">Enquire</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/page2/2.jpg" class="echo-img" alt="house" />
+            <div class="card-details">
+              <h1>Breeze</h1>
+              <p class="card-location">Bangalore, Karnataka</p>
+              <p class="card-desc">Self Sufficient Community Living</p>
+              <div class="legal-process">
+                <label for="file" class="legal-lbl">Legal Process</label>
+                <progress id="file" value="90" class="progress" max="100">
+                  32%
+                </progress>
+                <span class="progress-value">90%</span>
+              </div>
+              <div class="ratings-bar">
+                <p>Plot Availability</p>
+                <div class="bars checked"></div>
+                <div class="bars checked"></div>
+                <div class="bars unchecked"></div>
+                <div class="bars unchecked"></div>
+                <div class="bars unchecked"></div>
+              </div>
+              <p class="cmn-mrgn">
+                Current Project Status : Customer Aquisition
+              </p>
+              <div class="card-btns">
+                <button class="project-btn">
+                  <a href=""
+                    >Project Details
+                    <span
+                      ><i class="fa fa-arrow-down" aria-hidden="true"></i></span
+                  ></a>
+                </button>
+                <button class="enquire-btn"><a href="">Enquire</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/page2/3.jpg" class="echo-img" alt="house" />
+            <div class="card-details">
+              <h1>Dew</h1>
+              <p class="card-location">Bangalore, Karnataka</p>
+              <p class="card-desc">Self Sufficient Community Living</p>
+              <div class="legal-process">
+                <label for="file" class="legal-lbl">Legal Process</label>
+                <progress id="file" value="90" class="progress" max="100">
+                  32%
+                </progress>
+                <span class="progress-value">90%</span>
+              </div>
+              <div class="ratings-bar">
+                <p>Plot Availability</p>
+                <div class="bars checked"></div>
+                <div class="bars checked"></div>
+                <div class="bars unchecked"></div>
+                <div class="bars unchecked"></div>
+                <div class="bars unchecked"></div>
+              </div>
+              <p class="cmn-mrgn">
+                Current Project Status : Customer Aquisition
+              </p>
+              <div class="card-btns">
+                <button class="project-btn">
+                  <a href=""
+                    >Project Details
+                    <span
+                      ><i class="fa fa-arrow-down" aria-hidden="true"></i></span
+                  ></a>
+                </button>
+                <button class="enquire-btn"><a href="">Enquire</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-status">
+          <progress id="progress" value="50" class="progress-bar" max="100">
+          </progress>
+          <p class="progressbar-value">
+            <span id="cards-seen">2</span> / <span id="total-cards">3</span>
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- About section -->
@@ -134,5 +260,6 @@
         </div>
       </div>
     </section>
+    <script src="./page2.js"></script>
   </body>
 </html>

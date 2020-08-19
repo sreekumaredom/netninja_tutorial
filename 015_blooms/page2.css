@@ -176,6 +176,231 @@ h6 {
   height: 100vh;
 }
 
+#p-list .container {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.see-more {
+  display: inline-block;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  border: 1px solid #2d6a4f;
+  padding: 0.4rem 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.see-more a {
+  color: #2d6a4f;
+}
+
+.see-more:hover {
+  background: #2d6a4f;
+}
+
+.see-more:hover a {
+  color: #fff;
+}
+
+.cards-container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 364px);
+  grid-gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+
+.card-details {
+  color: #2d6a4f;
+  display: grid;
+  grid-template-rows: repeat(7, auto);
+  justify-content: center;
+  grid-gap: 7px;
+  padding: 0.5rem;
+}
+
+.card-btns {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.progress {
+  width: 40%;
+  height: 5px;
+  border-radius: 3px;
+}
+
+.progress::-webkit-progress-bar {
+  background: #e5e5e5;
+  border-radius: 3px;
+}
+
+.progress::-webkit-progress-value {
+  background: #52b788;
+  border-radius: 3px;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 5px;
+  border-radius: 3px;
+}
+.progress-bar::-webkit-progress-bar {
+  background: #e5e5e5;
+  border-radius: 3px;
+}
+.progress-bar ::-webkit-progress-value {
+  background: #52b788;
+  border-radius: 3px;
+}
+
+.legal-process {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+}
+
+.legal-process label {
+  margin: 0 15px 0 0;
+}
+
+.legal-process .progress {
+  margin: 0 8px 0 0;
+}
+
+.legal-lbl {
+  font-size: 16px;
+  color: #2d6a4f;
+}
+
+.progress-value {
+  font-size: 14px;
+  color: #2d6a4f;
+}
+
+.ratings-bar {
+  display: flex;
+  align-items: center;
+}
+
+.ratings-bar p {
+  margin: 0 8px 0 0;
+}
+
+.ratings-bar div {
+  width: 24px;
+  height: 5px;
+  margin: 0 5px 0 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.checked {
+  background-color: #52b788;
+}
+
+.unchecked {
+  background-color: #e5e5e5;
+}
+
+.cards-status {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-status progress {
+  display: block;
+  width: 85%;
+}
+
+.card-details h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card-desc {
+  margin-top: 0.2rem;
+}
+
+.card-location {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.enquire-btn {
+  background: #2d6a4f;
+  outline: none;
+  border: 0;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.enquire-btn a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.project-btn {
+  background: #fff;
+  outline: none;
+  padding: 0.5rem 1rem;
+  /* border: none; */
+  border: 1px solid #2d6a4f;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.project-btn a {
+  color: #2d6a4f;
+}
+
+.mv-left,
+.mv-right {
+  position: absolute;
+}
+
+.mv-left {
+  transform: translate(-50px, 340%);
+  color: #dfdbdb;
+  cursor: pointer;
+}
+
+.mv-right {
+  transform: translate(1170px, 340%);
+  color: #dfdbdb;
+  cursor: pointer;
+}
+
 /* About us section */
 #about {
   height: 100vh;
@@ -191,8 +416,12 @@ h6 {
 }
 
 .about-img {
-  height: 650px;
-  width: 473px;
+  height: 620px;
+  width: 373px;
+}
+
+.about-img img {
+  height: 100%;
 }
 
 .about-msg {

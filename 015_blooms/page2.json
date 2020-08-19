@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Echo",
+    "location": "Bangalore,Karnataka",
+    "desc": "Self Sufficient Community Living",
+    "legal": 90,
+    "avail": 2,
+    "status": "Customer Aquisition"
+  },
+  {
+    "name": "Breeze",
+    "location": "Wayanad,Karnataka",
+    "desc": "Self Sufficient Community Living",
+    "legal": 90,
+    "avail": 2,
+    "status": "Customer Aquisition"
+  },
+  {
+    "name": "Dew",
+    "location": "Bangalore,Karnataka",
+    "desc": "Self Sufficient Community Living",
+    "legal": 90,
+    "avail": 2,
+    "status": "Customer Aquisition"
+  },
+  {
+    "name": "Echo",
+    "location": "Bangalore,Karnataka",
+    "desc": "Self Sufficient Community Living",
+    "legal": 90,
+    "avail": 2,
+    "status": "Customer Aquisition"
+  }
+]
