@@ -20,10 +20,78 @@
         </div>
       </div>
     </section>
+
+    <!-- Sort buttons -->
+    <div class="sort-btns">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <span>Location</span> <i class="fas fa-angle-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <div>
+            <label for="wynd">Wayanad</label>
+            <input id="wynd" type="checkbox" />
+          </div>
+          <div>
+            <label for="bnglr">Bangalore</label>
+            <input id="bnglr" type="checkbox" />
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <span>Project Model</span> <i class="fas fa-angle-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <div>
+            <label for="cv">Community Villa</label>
+            <input id="cv" type="checkbox" />
+          </div>
+          <div>
+            <label for="home">Homestead</label>
+            <input id="home" type="checkbox" />
+          </div>
+          <div>
+            <label for="land">Land</label> <input id="land" type="checkbox" />
+          </div>
+          <div>
+            <label for="ltl">Long Term Lease</label>
+            <input id="ltl" type="checkbox" />
+          </div>
+          <div>
+            <label for="rental">Rental</label>
+            <input id="rental" type="checkbox" />
+          </div>
+          <div>
+            <label for="stl">Short Term Lease</label>
+            <input id="stl" type="checkbox" />
+          </div>
+          <div>
+            <label for="iv">Individual Villa</label>
+            <input id="iv" type="checkbox" />
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <span>Status</span> <i class="fas fa-angle-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <div>
+            <label for="cmp">Completed</label>
+            <input id="cmp" type="checkbox" />
+          </div>
+          <div>
+            <label for="acq">Customer Aquisition</label>
+            <input id="acq" type="checkbox" />
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Project listing section -->
     <section id="p-list" class="p-list">
       <div class="container">
-        <div class="cards-container">
+        <div id="cards-container" class="cards-container">
           <div class="card">
             <img src="./img/page2/1.jpg" class="echo-img" alt="house" />
             <div class="card-details">
@@ -132,15 +200,45 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="cards-status">
-          <progress id="progress" value="50" class="progress-bar" max="100">
-          </progress>
-          <p class="progressbar-value">
-            <span id="cards-seen">2</span> / <span id="total-cards">3</span>
-          </p>
+          <div class="card">
+            <img src="./img/page2/3.jpg" class="echo-img" alt="house" />
+            <div class="card-details">
+              <h1>Dew</h1>
+              <p class="card-location">Bangalore, Karnataka</p>
+              <p class="card-desc">Self Sufficient Community Living</p>
+              <div class="legal-process">
+                <label for="file" class="legal-lbl">Legal Process</label>
+                <progress id="file" value="90" class="progress" max="100">
+                  32%
+                </progress>
+                <span class="progress-value">90%</span>
+              </div>
+              <div class="ratings-bar">
+                <p>Plot Availability</p>
+                <div class="bars checked"></div>
+                <div class="bars checked"></div>
+                <div class="bars unchecked"></div>
+                <div class="bars unchecked"></div>
+                <div class="bars unchecked"></div>
+              </div>
+              <p class="cmn-mrgn">
+                Current Project Status : Customer Aquisition
+              </p>
+              <div class="card-btns">
+                <button class="project-btn">
+                  <a href=""
+                    >Project Details
+                    <span
+                      ><i class="fa fa-arrow-down" aria-hidden="true"></i></span
+                  ></a>
+                </button>
+                <button class="enquire-btn"><a href="">Enquire</a></button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <script src="./page3.js"></script>
   </body>
 </html>

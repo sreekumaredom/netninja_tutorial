@@ -63,7 +63,7 @@ h6 {
   grid-template-columns: 2fr 8fr;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .main-nav a {
@@ -74,6 +74,18 @@ h6 {
   font-style: medium;
   font-size: 36px;
   line-height: 44px;
+}
+
+/* Nav end */
+
+#p-list .container {
+  padding: 2rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, auto);
 }
 
 /* Cards */
@@ -232,4 +244,56 @@ h6 {
 
 .project-btn a {
   color: #2d6a4f;
+}
+
+/* Drop down */
+.dropbtn {
+  border: 1px solid #2d6a4f;
+  color: #2d6a4f;
+  padding: 11px;
+  font-size: 24px;
+  background: #fff;
+  width: 300px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+}
+
+.dropdown-content div {
+  color: #2d6a4f;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-content div:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sort-btns {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-evenly;
+  align-items: center;
 }
