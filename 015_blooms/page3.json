@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Echo",
+    "location": "Bangalore,Karnataka",
+    "desc": "Self Sufficient Community Living",
+    "legal": 50,
+    "avail": 2,
+    "status": "Customer Aquisition",
+    "src": "./img/page2/1.jpg"
+  },
+  {
+    "name": "Breeze",
+    "location": "Wayanad,Kerala",
+    "desc": "Self Sufficient Community Living",
+    "legal": 75,
+    "avail": 2,
+    "status": "Completed",
+    "src": "./img/page2/2.jpg"
+  },
+  {
+    "name": "Dew",
+    "location": "Bangalore,Karnataka",
+    "desc": "Self Sufficient Community Living",
+    "legal": 90,
+    "avail": 2,
+    "status": "Customer Aquisition",
+    "src": "./img/page2/3.jpg"
+  },
+  {
+    "name": "Echo",
+    "location": "Wayanad,Kerala",
+    "desc": "Self Sufficient Community Living",
+    "legal": 100,
+    "avail": 2,
+    "status": "Completed",
+    "src": "./img/page2/4.jpg"
+  },
+  {
+    "name": "Paradise",
+    "location": "Bangalore,Karnataka",
+    "desc": "Self Sufficient Community Living",
+    "legal": 40,
+    "avail": 2,
+    "status": "Customer Aquisition",
+    "src": "./img/page2/1.jpg"
+  }
+]
