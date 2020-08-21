@@ -36,7 +36,7 @@ const modelButtons = [
 ];
 
 //Filter object
-const filter = {};
+let filter = {};
 
 //Assigning event listener to location buttons
 locButtons.forEach((loc) => {
@@ -64,25 +64,55 @@ statusButtons.forEach((status) => {
       } else {
         filter.status = 'Customer Aquisition';
       }
-      console.log(filter);
+      fetchProjects();
     } else {
       if (e.target.id == 'cmp') {
         deleteByVal('Completed');
       } else {
         deleteByVal('Customer Aquisition');
       }
-      console.log(filter);
+      fetchProjects();
     }
   });
 });
 
 //Assigning event listener to model buttons
 modelButtons.forEach((model) => {
-  model.addEventListener('click', () => {
+  model.addEventListener('click', (e) => {
     if (model.checked == true) {
-      console.log('sorting on');
+      if (e.target.id == 'cv') {
+        filter.model = 'Community Villa';
+      } else if (e.target.id == 'home') {
+        filter.model = 'Homestead';
+      } else if (e.target.id == 'land') {
+        filter.model = 'Land';
+      } else if (e.target.id == 'ltl') {
+        filter.model = 'Long Term Lease';
+      } else if (e.target.id == 'rental') {
+        filter.model = 'Rental';
+      } else if (e.target.id == 'stl') {
+        filter.model = 'Short Term Lease';
+      } else if (e.target.id == 'iv') {
+        filter.model = 'Individual Villa';
+      }
+      fetchProjects();
     } else {
-      console.log('sorting off');
+      if (e.target.id == 'cv') {
+        deleteByVal('Community Villa');
+      } else if (e.target.id == 'home') {
+        deleteByVal('Homestead');
+      } else if (e.target.id == 'land') {
+        deleteByVal('Land');
+      } else if (e.target.id == 'ltl') {
+        deleteByVal('Long Term Lease');
+      } else if (e.target.id == 'rental') {
+        deleteByVal('Rental');
+      } else if (e.target.id == 'stl') {
+        deleteByVal('Short Term Lease');
+      } else if (e.target.id == 'iv') {
+        deleteByVal('Individual Villa');
+      }
+      fetchProjects();
     }
   });
 });
@@ -118,7 +148,7 @@ function populateUI(cards) {
     <div class="card-details">
       <h1>${card.name}</h1>
       <p class="card-location">${card.location}</p>
-      <p class="card-desc">${card.desc}</p>
+      <p class="card-desc">${card.model}</p>
       <div class="legal-process">
         <label for="file" class="legal-lbl">Legal Process</label>
         <progress id="file" value="${card.legal}" class="progress" max="100">

@@ -2,7 +2,7 @@
   {
     "name": "Echo",
     "location": "Bangalore,Karnataka",
-    "desc": "Self Sufficient Community Living",
+    "model": "Community Villa",
     "legal": 50,
     "avail": 2,
     "status": "Customer Aquisition",
@@ -11,7 +11,7 @@
   {
     "name": "Breeze",
     "location": "Wayanad,Kerala",
-    "desc": "Self Sufficient Community Living",
+    "model": "Homestead",
     "legal": 75,
     "avail": 2,
     "status": "Completed",
@@ -20,7 +20,7 @@
   {
     "name": "Dew",
     "location": "Bangalore,Karnataka",
-    "desc": "Self Sufficient Community Living",
+    "model": "Homestead",
     "legal": 90,
     "avail": 2,
     "status": "Customer Aquisition",
@@ -29,7 +29,7 @@
   {
     "name": "Echo",
     "location": "Wayanad,Kerala",
-    "desc": "Self Sufficient Community Living",
+    "model": "Community Villa",
     "legal": 100,
     "avail": 2,
     "status": "Completed",
@@ -38,7 +38,7 @@
   {
     "name": "Paradise",
     "location": "Bangalore,Karnataka",
-    "desc": "Self Sufficient Community Living",
+    "model": "Homestead",
     "legal": 40,
     "avail": 2,
     "status": "Customer Aquisition",
