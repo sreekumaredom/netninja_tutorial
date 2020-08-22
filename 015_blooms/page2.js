@@ -1,23 +1,13 @@
-const leftBtn = document.getElementById('mv-left');
-const rightBtn = document.getElementById('mv-right');
+const navBar = document.getElementById('main-nav');
 
-let jsondata;
-fetch('./page2.json')
-  .then(function (u) {
-    return u.json();
-  })
-  .then(function (json) {
-    jsondata = json;
-  });
+window.onscroll = function () {
+  var top = window.scrollY;
+  console.log(top);
 
-console.log(jsondata);
-
-//Left button event listener
-leftBtn.addEventListener('click', () => {
-  console.log('Left');
-});
-
-//Right button event listener
-rightBtn.addEventListener('click', () => {
-  console.log('Right');
-});
+  console.log(top);
+  if (top >= 100 && top < 3168) {
+    navBar.classList.add('active');
+  } else {
+    navBar.classList.remove('active');
+  }
+};

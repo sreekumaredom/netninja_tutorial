@@ -1,3 +1,16 @@
+//navbar
+const navBar = document.getElementById('main-nav');
+
+window.onscroll = function () {
+  var top = window.scrollY;
+
+  if (top >= 100 && top < 3168) {
+    navBar.classList.add('active');
+  } else {
+    navBar.classList.remove('active');
+  }
+};
+
 //Location sort buttons
 const wyndBtn = document.getElementById('wynd');
 const bnglrBtn = document.getElementById('bnglr');
@@ -38,20 +51,17 @@ const modelButtons = [
 //Filter object
 let filter = {};
 
-//Assigning event listener to location buttons
-locButtons.forEach((loc) => {
-  loc.addEventListener('click', () => {
-    if (loc.checked == true) {
-      console.log('sorting on');
-    } else {
-      console.log('sorting off');
-    }
-  });
-});
+//Delete property by key value
+function deleteByVal(val, array) {
+  const index = array.indexOf(val);
+  if (index > -1) {
+    array.splice(index, 1);
+  }
+}
 
-function deleteByVal(val) {
-  for (var key in filter) {
-    if (filter[key] == val) delete filter[key];
+function checkEmptyAndDelete(prop) {
+  if (filter[prop].length == 0) {
+    delete filter[prop];
   }
 }
 
@@ -59,18 +69,28 @@ function deleteByVal(val) {
 statusButtons.forEach((status) => {
   status.addEventListener('click', (e) => {
     if (status.checked == true) {
+      if (!filter.status) {
+        filter.status = [];
+      }
       if (e.target.id == 'cmp') {
-        filter.status = 'Completed';
+        filter.status.push('Completed');
       } else {
-        filter.status = 'Customer Aquisition';
+        filter.status.push('Customer Aquisition');
       }
       fetchProjects();
     } else {
       if (e.target.id == 'cmp') {
-        deleteByVal('Completed');
+        deleteByVal('Completed', filter.status);
+        if (filter.status.length == 0) {
+          delete filter.status;
+        }
       } else {
-        deleteByVal('Customer Aquisition');
+        deleteByVal('Customer Aquisition', filter.status);
+        if (filter.status.length == 0) {
+          delete filter.status;
+        }
       }
+
       fetchProjects();
     }
   });
@@ -80,37 +100,91 @@ statusButtons.forEach((status) => {
 modelButtons.forEach((model) => {
   model.addEventListener('click', (e) => {
     if (model.checked == true) {
+      if (!filter.model) {
+        filter.model = [];
+      }
       if (e.target.id == 'cv') {
-        filter.model = 'Community Villa';
+        filter.model.push('Community Villa');
       } else if (e.target.id == 'home') {
-        filter.model = 'Homestead';
+        filter.model.push('Homestead');
       } else if (e.target.id == 'land') {
-        filter.model = 'Land';
+        filter.model.push('Land');
       } else if (e.target.id == 'ltl') {
-        filter.model = 'Long Term Lease';
+        filter.model.push('Long Term Lease');
       } else if (e.target.id == 'rental') {
-        filter.model = 'Rental';
+        filter.model.push('Rental');
       } else if (e.target.id == 'stl') {
-        filter.model = 'Short Term Lease';
+        filter.model.push('Short Term Lease');
       } else if (e.target.id == 'iv') {
-        filter.model = 'Individual Villa';
+        filter.model.push('Individual Villa');
       }
       fetchProjects();
     } else {
       if (e.target.id == 'cv') {
-        deleteByVal('Community Villa');
+        deleteByVal('Community Villa', filter.model);
+        if (filter.model.length == 0) {
+          delete filter.model;
+        }
       } else if (e.target.id == 'home') {
-        deleteByVal('Homestead');
+        deleteByVal('Homestead', filter.model);
+        if (filter.model.length == 0) {
+          delete filter.model;
+        }
       } else if (e.target.id == 'land') {
-        deleteByVal('Land');
+        deleteByVal('Land', filter.model);
+        if (filter.model.length == 0) {
+          delete filter.model;
+        }
       } else if (e.target.id == 'ltl') {
-        deleteByVal('Long Term Lease');
+        deleteByVal('Long Term Lease', filter.model);
+        if (filter.model.length == 0) {
+          delete filter.model;
+        }
       } else if (e.target.id == 'rental') {
-        deleteByVal('Rental');
+        deleteByVal('Rental', filter.model);
+        if (filter.model.length == 0) {
+          delete filter.model;
+        }
       } else if (e.target.id == 'stl') {
-        deleteByVal('Short Term Lease');
+        deleteByVal('Short Term Lease', filter.model);
+        if (filter.model.length == 0) {
+          delete filter.model;
+        }
       } else if (e.target.id == 'iv') {
-        deleteByVal('Individual Villa');
+        deleteByVal('Individual Villa', filter.model);
+        if (filter.model.length == 0) {
+          delete filter.model;
+        }
+      }
+      fetchProjects();
+    }
+  });
+});
+
+//Assigning event listener to location buttons
+locButtons.forEach((loc) => {
+  loc.addEventListener('click', (e) => {
+    if (loc.checked == true) {
+      if (!filter.location) {
+        filter.location = [];
+      }
+      if (e.target.id == 'wynd') {
+        filter.location.push('Wayanad,Kerala');
+      } else {
+        filter.location.push('Bangalore,Karnataka');
+      }
+      fetchProjects();
+    } else {
+      if (e.target.id == 'wynd') {
+        deleteByVal('Wayanad,Kerala', filter.location);
+        if (filter.location.length == 0) {
+          delete filter.location;
+        }
+      } else {
+        deleteByVal('Bangalore,Karnataka', filter.location);
+        if (filter.location.length == 0) {
+          delete filter.location;
+        }
       }
       fetchProjects();
     }
@@ -126,13 +200,15 @@ async function fetchProjects() {
   //Fetch and store here
   projectData = await res.json();
 
-  let filteredData = projectData.filter((item) => {
-    for (let key in filter) {
-      if (item[key] === undefined || item[key] != filter[key]) return false;
-    }
-    return true;
-  });
+  //Filtering.................. *******************
 
+  let filteredData = projectData.filter((obj) =>
+    Object.entries(filter).every(([prop, value]) => value.includes(obj[prop]))
+  );
+
+  // console.log(filteredData); *********************
+
+  //Display data
   populateUI(filteredData);
 }
 
