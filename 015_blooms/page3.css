@@ -85,7 +85,7 @@ h6 {
 .cards-container {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 415px);
 }
 
 /* Cards */
@@ -291,7 +291,7 @@ h6 {
 }
 
 .sort-btns {
-  padding-top: 1rem;
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: space-evenly;
