@@ -1,12 +1,11 @@
-$(document).ready(function () {
-  $(window).scroll(function () {
-    var height = $('.helo').height();
-    var scrollTop = $(window).scrollTop();
+const navBar = document.getElementById('main-nav');
 
-    if (scrollTop >= height - 108) {
-      $('.nav-container').addClass('solid-nav');
-    } else {
-      $('.nav-container').removeClass('solid-nav');
-    }
-  });
-});
+window.onscroll = function () {
+  var top = window.scrollY;
+
+  if (top >= 100) {
+    navBar.classList.add('active');
+  } else {
+    navBar.classList.remove('active');
+  }
+};

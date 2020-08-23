@@ -43,5 +43,41 @@
     "avail": 2,
     "status": "Customer Aquisition",
     "src": "./img/page2/1.jpg"
+  },
+  {
+    "name": "Pranavam",
+    "location": "Wayanad,Kerala",
+    "model": "Land",
+    "legal": 100,
+    "avail": 2,
+    "status": "Customer Aquisition",
+    "src": "./img/page2/4.jpg"
+  },
+  {
+    "name": "Vythiri Village",
+    "location": "Wayanad,Kerala",
+    "model": "Rental",
+    "legal": 100,
+    "avail": 2,
+    "status": "Customer Aquisition",
+    "src": "./img/page2/1.jpg"
+  },
+  {
+    "name": "Green Fates",
+    "location": "Wayanad,Kerala",
+    "model": "Long Term Lease",
+    "legal": 100,
+    "avail": 2,
+    "status": "Completed",
+    "src": "./img/page2/2.jpg"
+  },
+  {
+    "name": "Paragon",
+    "location": "Bangalore,Karnataka",
+    "model": "Short Term Lease",
+    "legal": 100,
+    "avail": 2,
+    "status": "Completed",
+    "src": "./img/page2/2.jpg"
   }
 ]

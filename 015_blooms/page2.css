@@ -58,6 +58,20 @@ h6 {
   text-transform: uppercase;
 }
 
+.main-nav.active {
+  background: #fff;
+  color: #1b4332;
+}
+
+.main-nav.active a {
+  color: #1b4332;
+}
+
+.main-nav.active a:hover {
+  color: #1b4332;
+  border-color: #1b4332;
+}
+
 .main-nav .container {
   display: grid;
   grid-template-columns: 2fr 8fr;
@@ -453,6 +467,10 @@ h6 {
   padding-top: 90px;
   padding-left: 1rem;
   color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70vh;
+  justify-content: flex-end;
 }
 
 .contact-contents {

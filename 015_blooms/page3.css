@@ -58,12 +58,26 @@ h6 {
   text-transform: uppercase;
 }
 
+.main-nav.active {
+  background: #fff;
+  color: #1b4332;
+}
+
+.main-nav.active a {
+  color: #1b4332;
+}
+
+.main-nav.active a:hover {
+  color: #1b4332;
+  border-color: #1b4332;
+}
+
 .main-nav .container {
   display: grid;
   grid-template-columns: 2fr 8fr;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 0.7rem;
 }
 
 .main-nav a {
@@ -95,6 +109,19 @@ h6 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   justify-content: space-evenly;
   padding-bottom: 1rem;
+  animation: fadeinout 1s linear forwards;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .card-details {
@@ -288,6 +315,14 @@ h6 {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.dropdown i {
+  transition: all 0.3s ease-out;
+}
+
+.dropdown:hover i {
+  transform: rotate(-180deg);
 }
 
 .sort-btns {
