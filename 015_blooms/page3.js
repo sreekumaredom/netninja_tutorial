@@ -200,7 +200,7 @@ async function fetchProjects() {
   //Fetch and store here
   projectData = await res.json();
 
-  //Filtering.................. *******************
+  //Filtering.................. *********************
 
   let filteredData = projectData.filter((obj) =>
     Object.entries(filter).every(([prop, value]) => value.includes(obj[prop]))
