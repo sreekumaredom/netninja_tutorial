@@ -156,6 +156,10 @@ h6 {
   padding: 3rem;
 }
 
+.l-heading {
+  font-size: 3rem;
+}
+
 .bg-dark h1,
 .bg-dark h2,
 .bg-dark h3,
@@ -296,6 +300,17 @@ h6 {
   margin-bottom: 1rem;
 }
 
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}
 /* Footer */
 #main-footer {
   background: var(--dark-color);
