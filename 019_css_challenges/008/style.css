@@ -39,7 +39,10 @@ h1 {
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2em 0;
+}
+
+.row-2 {
+  padding: 3em 0;
 }
 
 .row {
@@ -95,7 +98,7 @@ h1 {
   background: #136372;
   width: 100%;
   color: #fff;
-  padding: 2em 0;
+  padding: 3em 0;
 }
 
 .col + .col {
