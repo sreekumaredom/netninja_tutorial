@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background: cadetblue;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.nav-ul li {
+  font-size: 1.6rem;
+  padding: 1em;
+}
