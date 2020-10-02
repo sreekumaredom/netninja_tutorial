@@ -14,7 +14,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .hero h1 {
@@ -57,7 +57,7 @@ img {
 
 .about__text p {
   flex-basis: 45%;
-  font-size: 1.31rem;
+  font-size: 1.5rem;
 }
 
 .about h2 {
@@ -73,6 +73,7 @@ img {
 
 .features {
   color: #fff;
+  padding: 10vh 0;
 }
 
 .features .container {
@@ -82,8 +83,21 @@ img {
 
 .features h2 {
   font-size: 2.25rem;
+  margin-bottom: 1em;
+}
+
+.features p {
+  font-size: 1.5rem;
 }
 
 .features .container > * {
   flex-basis: 45%;
+}
+
+.features--brown {
+  background: #824936;
+}
+
+.features-reverse .container {
+  flex-direction: row-reverse;
 }
