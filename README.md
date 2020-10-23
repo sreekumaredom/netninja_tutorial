@@ -2,6 +2,10 @@
 
 HTML &amp; CSS Tutorials + Notes
 
+### Snippets 
+
+1. Image overlay hover - shorturl.at/mvN45
+
 ### Overlay
 
 - .hero::before {
