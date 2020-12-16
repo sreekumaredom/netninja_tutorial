@@ -5,7 +5,7 @@
     <title>Tailwind Food</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="text-gray-600">
+  <body class="text-gray-600 font-body">
     <div>
       <div>
         <nav>
@@ -35,10 +35,16 @@
       </div>
 
       <main class="px-16 py-6">
-        <div>
-          <a href="#">Log in</a>
-          <a href="#">Sign up</a>
+        <div class="flex justify-end">
+          <a href="#" class="text-primary">Log in</a>
+          <a href="#" class="text-primary ml-2">Sign up</a>
         </div>
+
+        <!-- <div class="flex items-center justify-center">
+          <div class="bg-red-500 h-4 w-6"></div>
+          <div class="bg-blue-500 h-8 w-6"></div>
+          <div class="bg-green-500 h-12 w-6"></div>
+        </div> -->
 
         <header>
           <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
@@ -70,8 +76,8 @@
           </div>
         </div>
 
-        <div>
-          <div>Load more</div>
+        <div class="flex justify-center">
+          <div class="bg-secondary-100 text-secondary-200">Load more</div>
         </div>
       </main>
     </div>
