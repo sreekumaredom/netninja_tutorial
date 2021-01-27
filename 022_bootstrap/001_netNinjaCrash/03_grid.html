@@ -13,26 +13,38 @@
       crossorigin="anonymous"
     />
 
-    <title>Introduction</title>
+    <style>
+      .row div {
+        padding: 20px 10px;
+        border: 1px solid;
+      }
+    </style>
+
+    <title>Grid System</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <h2>This is a h2</h2>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut sunt
-      reprehenderit cupiditate commodi totam corporis dolorem sapiente
-      consectetur voluptas aliquid.
-    </p>
-    <ul>
-      <li>Potatoes</li>
-      <li>Onions</li>
-      <li>Chicken</li>
-    </ul>
-    <form>
-      <label>Text field</label>
-      <input type="text" placeholder="placeholder" />
-      <input type="submit" value="Click Me" />
-    </form>
+    <div class="container">
+      <div class="row" style="background: lightblue">
+        <div class="col-md-6 text-center">col-md-6</div>
+        <div class="col-md-6 text-center">col-md-6</div>
+      </div>
+
+      <div class="row" style="background: pink">
+        <div class="col-lg-3 col-md-6 text-center">col-sm-6 col-lg-3</div>
+        <div class="col-lg-3 col-md-6 text-center">col-sm-6 col-lg-3</div>
+        <div class="col-lg-3 col-md-6 text-center">col-sm-6 col-lg-3</div>
+        <div class="col-lg-3 col-md-6 text-center">col-sm-6 col-lg-3</div>
+      </div>
+
+      <div class="row" style="background: yellow">
+        <div class="col-3 text-center">col-3</div>
+        <div class="col-3 text-center">col-3</div>
+        <div class="col-3 text-center">col-3</div>
+        <div class="col-3 text-center">col-3</div>
+      </div>
+    </div>
+
+    <!-- https://getbootstrap.com/docs/4.4/layout/overview/#responsive-breakpoints -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
