@@ -1,6 +1,4 @@
 @import 'config';
-@import 'utilities';
-@import 'buttons';
 
 * {
   box-sizing: border-box;
@@ -23,8 +21,10 @@ a {
 }
 
 .showcase {
-  background-color: $primary-color;
-  color: #fff;
+  // background-color: $primary-color;
+  // color: set-text-color($primary-color);
+
+  @include set-background($primary-color);
   height: 600px;
 
   nav {
@@ -40,14 +40,14 @@ a {
         padding: 15px;
       }
 
+      a {
+        color: set-text-color($primary-color);
+      }
+
       a:hover {
         color: $secondary-color;
       }
     }
-  }
-
-  a {
-    color: #fff;
   }
 
   &-content {
@@ -55,6 +55,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
 
     img {
       width: 50%;
@@ -64,9 +65,10 @@ a {
       font-size: 50px;
       line-height: 1.2;
     }
-
-    p {
-      margin: 20px 0;
-    }
   }
 }
+
+@import 'utilities';
+@import 'buttons';
+
+@import 'mobile';
