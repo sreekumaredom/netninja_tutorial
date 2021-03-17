@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-// NOTE :
+// NOTE:
 // Note that Row column widths will override Col
 // widths set on lower breakpoints when viewed on larger screens.
 // The < Col xs = { 6} /> size will be overriden by < Row md = { 4} /> on medium and larger screens.
