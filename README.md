@@ -1,6 +1,6 @@
 # netninja_tutorial
 
-HTML &amp; CSS Tutorials + Notes
+HTML &amp; CSS Tutorials and Notes
 
 ### Snippets 
 
