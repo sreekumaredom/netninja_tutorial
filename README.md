@@ -17,6 +17,7 @@ HTML &amp; CSS Tutorials and Notes
   right: 0;
   background: rgba(0, 0, 0, 0.6);
   }
+  
 - .hero \*{
   z-index: 10;
   }
