@@ -64,7 +64,7 @@ HTML &amp; CSS Tutorials and Notes
 
 ### CSS Flexbox
 
-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox
 - .container { display: flex | inline-flex }
 - .container { flex-direction: row | row-reverse | column | column-reverse }
 - .container { flex-wrap: nowrap | wrap | wrap-reverse } (jump to next line or not)
